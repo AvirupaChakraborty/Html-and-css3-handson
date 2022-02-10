@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            table,td{
+                border: 1px solid black;
+            }
+        </style>
+        <script src="script.js" type="text/javascript" charset="utf-8">
+            
+        </script>
+    </head>
+    <body>
+        <h1>
+            Elite Coaching Center
+        </h1>
+        <table>
+            <tr>
+                <td><label for="studentName">Student Name</label></td>
+                <td><input type="text" id="sname" required></td>
+            </tr>
+            <tr>
+                <td><label for="course" >Course</label></td>
+                <td><select name="course" id="course" required>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Oracle">Oracle</option>
+                    </select>
+                </td>
+            </tr>
+        </table><br>
+        <input type="button" name="submit" id="submit" value="Register" onclick="display()"><br>
+        <div id="greet"></div>
+    </body>
+</html>
