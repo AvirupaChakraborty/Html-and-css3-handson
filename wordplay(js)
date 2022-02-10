@@ -1,0 +1,24 @@
+function wordPlay(number){
+    
+        if(number>50)
+        return "Range is High";
+        
+        else if(number<1)
+        return "Not Valid";
+          var answer="";
+        for(var i=1;i<=number;i++) 
+        {
+            if(parseInt(i)%5!==0 && parseInt(i)%3!==0)
+         answer=answer+" "+i;
+        else if(parseInt(i)%5===0 && parseInt(i)%3===0)
+        answer=answer+" Jump";
+        else if(parseInt(i)%3===0)
+        answer=answer+" Tap";
+        else if(parseInt(i)%5===0)
+        answer=answer+" Clap";
+      }
+      return answer;
+    
+
+    
+}
